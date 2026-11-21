@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Basit Ali | Senior BI &amp; Analytics Engineer</title>
+<meta name="description" content="Basit Ali, Senior BI and Analytics Engineer: Power BI, Tableau and SQL for banking, SaaS and microfinance. 7+ years, remote, any time zone.">
+<meta property="og:title" content="Basit Ali | Senior BI &amp; Analytics Engineer">
+<meta property="og:description" content="Power BI, Tableau and SQL for banking, SaaS and microfinance. 7+ years of reporting that leadership teams rely on.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231F3A5F'/%3E%3Ctext x='16' y='22' font-family='Arial' font-size='15' font-weight='700' fill='white' text-anchor='middle'%3EBA%3C/text%3E%3C/svg%3E">
+<style>
+:root{--navy:#1F3A5F;--navy-d:#152a46;--blue:#2563EB;--ink:#1c2430;--muted:#5b6675;--line:#e3e8ef;--bg:#ffffff;--soft:#f5f7fa;--radius:12px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;font-family:"Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;font-size:16px}
+a{color:var(--blue)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--blue);outline-offset:2px;border-radius:4px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--navy);color:#fff;padding:8px 14px;border-radius:6px;z-index:100}
+.skip:focus{left:8px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+header.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+header.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:62px}
+.brand{font-weight:700;color:var(--navy);text-decoration:none;font-size:1.05rem}
+nav ul{list-style:none;margin:0;padding:0;display:flex;gap:22px}
+nav a{color:var(--ink);text-decoration:none;font-size:.95rem}
+nav a:hover{color:var(--blue)}
+.menu-btn{display:none;background:none;border:1px solid var(--line);border-radius:8px;padding:6px 10px;font-size:.95rem;cursor:pointer;color:var(--ink)}
+.hero{padding:76px 0 60px;background:linear-gradient(180deg,#f3f6fb 0%,#fff 100%);border-bottom:1px solid var(--line)}
+.hero .eyebrow{color:var(--blue);font-weight:600;font-size:.9rem;letter-spacing:.06em;text-transform:uppercase;margin:0 0 10px}
+.hero h1{font-size:clamp(2.1rem,4.6vw,3.2rem);line-height:1.15;margin:0 0 6px;color:var(--navy)}
+.hero .role{font-size:clamp(1.1rem,2.2vw,1.4rem);font-weight:600;margin:0 0 16px}
+.hero .lead{max-width:680px;color:var(--muted);font-size:1.08rem;margin:0 0 26px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:8px;font-weight:600;text-decoration:none;font-size:.97rem;border:1.5px solid var(--navy)}
+.btn.primary{background:var(--navy);color:#fff}
+.btn.primary:hover{background:var(--navy-d)}
+.btn.ghost{color:var(--navy);background:#fff}
+.btn.ghost:hover{background:var(--soft)}
+.facts{display:flex;flex-wrap:wrap;gap:10px 28px;margin:30px 0 0;padding:0;list-style:none;color:var(--muted);font-size:.95rem}
+.facts b{color:var(--ink)}
+section{padding:64px 0}
+section.alt{background:var(--soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+h2{font-size:1.75rem;color:var(--navy);margin:0 0 8px}
+.sub{color:var(--muted);margin:0 0 30px;max-width:700px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:28px}
+.stat{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:18px}
+.stat b{display:block;font-size:1.6rem;color:var(--navy)}
+.stat span{color:var(--muted);font-size:.9rem}
+.about-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:36px;align-items:start}
+.about-grid p{margin:0 0 14px}
+.panel{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+.panel h3{margin:0 0 10px;font-size:1.05rem;color:var(--navy)}
+.panel ul{margin:0;padding-left:18px}
+.panel li{margin-bottom:6px}
+.skills{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+.chip{border:1px solid var(--line);background:#fff;border-radius:999px;padding:5px 12px;font-size:.9rem}
+.chip.core{border-color:#c9d6ea;background:#eef3fb;color:var(--navy);font-weight:600}
+.chip small{color:var(--muted);font-weight:400}
+.legend{font-size:.88rem;color:var(--muted);margin-top:14px}
+.timeline{list-style:none;margin:0;padding:0;border-left:2px solid #c9d6ea}
+.timeline li{position:relative;padding:0 0 30px 26px}
+.timeline li::before{content:"";position:absolute;left:-8px;top:6px;width:14px;height:14px;border-radius:50%;background:#fff;border:3px solid var(--navy)}
+.timeline h3{margin:0;font-size:1.1rem}
+.timeline .org{color:var(--navy);font-weight:600}
+.timeline .when{color:var(--muted);font-size:.9rem;margin:2px 0 8px}
+.timeline ul{margin:0;padding-left:18px}
+.timeline ul li{padding:0;margin-bottom:4px}
+.timeline ul li::before{display:none}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px;display:flex;flex-direction:column}
+.card .tag{font-size:.78rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--blue);margin:0 0 6px}
+.card h3{margin:0 0 12px;font-size:1.12rem;color:var(--navy)}
+.card dl{margin:0;font-size:.93rem}
+.card dt{font-weight:700;margin-top:8px}
+.card dd{margin:2px 0 0;color:#3a4452}
+.card .tools{margin-top:auto;padding-top:14px;display:flex;flex-wrap:wrap;gap:6px}
+.card .tools span{font-size:.78rem;background:var(--soft);border:1px solid var(--line);border-radius:6px;padding:2px 8px}
+.card .link{margin-top:12px;font-weight:600;font-size:.93rem}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:18px}
+.viz{display:block;text-decoration:none;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:box-shadow .15s,transform .15s}
+.viz:hover{box-shadow:0 8px 24px rgba(31,58,95,.12);transform:translateY(-2px)}
+.viz img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;object-position:top;background:var(--soft);border-bottom:1px solid var(--line)}
+.viz span{display:block;padding:10px 14px;font-weight:600;font-size:.95rem}
+.viz small{display:block;padding:0 14px 12px;color:var(--muted);font-size:.83rem;margin-top:-6px}
+.note{margin-top:18px;color:var(--muted);font-size:.92rem}
+.edu{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.edu .panel p{margin:0;color:var(--muted);font-size:.93rem}
+.targets{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.contact{background:var(--navy);color:#fff;text-align:center}
+.contact h2{color:#fff}
+.contact .sub{color:#c8d3e3;margin-left:auto;margin-right:auto}
+.contact .btns{justify-content:center}
+.contact .btn.primary{background:#fff;color:var(--navy);border-color:#fff}
+.contact .btn.ghost{background:transparent;color:#fff;border-color:#fff}
+.contact .btn.ghost:hover{background:rgba(255,255,255,.1)}
+footer{padding:22px 0;font-size:.88rem;color:var(--muted);text-align:center}
+@media (max-width:900px){.cards{grid-template-columns:1fr 1fr}.stats{grid-template-columns:1fr 1fr}.about-grid,.skills,.targets{grid-template-columns:1fr}.edu{grid-template-columns:1fr}}
+@media (max-width:720px){
+ .menu-btn{display:block}
+ nav ul{display:none;position:absolute;top:62px;left:0;right:0;flex-direction:column;gap:0;background:#fff;border-bottom:1px solid var(--line)}
+ nav ul.open{display:flex}
+ nav li a{display:block;padding:12px 22px;border-top:1px solid var(--line)}
+ .cards{grid-template-columns:1fr}
+ .hero{padding:52px 0 44px}
+ section{padding:48px 0}
+}
+@media print{header.nav,.btns,.menu-btn{display:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav">
+ <div class="wrap">
+  <a class="brand" href="#top">Basit Ali</a>
+  <nav aria-label="Main">
+   <button class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
+   <ul id="menu">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#dashboards">Dashboards</a></li>
+    <li><a href="#contact">Contact</a></li>
+   </ul>
+  </nav>
+ </div>
+</header>
+
+<main id="main">
+<section class="hero" id="top">
+ <div class="wrap">
+  <p class="eyebrow">Power BI · Tableau · SQL · Banking &amp; SaaS</p>
+  <h1>Basit Ali</h1>
+  <p class="role">Senior BI &amp; Analytics Engineer</p>
+  <p class="lead">I turn messy data into dashboards and data models that leadership teams actually use. Over 7 years I have built reporting for a UAE bank, a US SaaS company and Pakistan's microfinance network, and I recently led the build of an in-house BI tool that replaced Tableau at my company.</p>
+  <div class="btns">
+   <a class="btn primary" href="mailto:mbasitalietrat1@gmail.com">Email me</a>
+   <a class="btn ghost" href="https://www.linkedin.com/in/basitalietrat" target="_blank" rel="noopener">LinkedIn</a>
+   <a class="btn ghost" href="cv/Basit-Ali-CV.pdf" download>Download CV (PDF)</a>
+  </div>
+  <ul class="facts">
+   <li><b>Based in:</b> Lahore, Pakistan (UTC+5)</li>
+   <li><b>Works:</b> fully remote, any time zone, incl. US hours</li>
+   <li><b>Open to:</b> full-time, contract, relocation with sponsorship</li>
+  </ul>
+ </div>
+</section>
+
+<section id="about">
+ <div class="wrap">
+  <h2>About</h2>
+  <div class="about-grid">
+   <div>
+    <p>I'm a BI and analytics engineer with 7+ years of building reporting that leadership teams rely on, for banking, SaaS and microfinance organisations in the UAE, US and Pakistan, much of it remotely.</p>
+    <p>My core is strong SQL on Amazon Redshift, PostgreSQL and Oracle, star-schema data models, SQL pipelines and stored procedures, SAS automation, and dashboards in Power BI and Tableau. I care about numbers that reconcile, metric definitions everyone shares, and reports that save people time.</p>
+    <p>I hold an MS in Data Science and a BS in Software Engineering from NUST, and I'm a Tableau Desktop Specialist.</p>
+   </div>
+   <div class="panel">
+    <h3>How I work</h3>
+    <ul>
+     <li>Clear requirements first, then small, reviewable increments.</li>
+     <li>Every number checked before it reaches a dashboard.</li>
+     <li>Written updates and documented hand-overs.</li>
+     <li>Comfortable presenting to executives and senior management.</li>
+    </ul>
+   </div>
+  </div>
+  <div class="stats" role="list">
+   <div class="stat" role="listitem"><b>7+ yrs</b><span>BI and analytics experience</span></div>
+   <div class="stat" role="listitem"><b>60+</b><span>Tableau &amp; Power BI dashboards at TCP</span></div>
+   <div class="stat" role="listitem"><b>50-100</b><span>Power BI reports for a UAE bank</span></div>
+   <div class="stat" role="listitem"><b>500+</b><span>sales staff on scorecards I built</span></div>
+  </div>
+ </div>
+</section>
+
+<section class="alt" id="skills">
+ <div class="wrap">
+  <h2>Skills</h2>
+  <p class="sub">Honest levels: core skills I use every day at work, and tools I work with at a basic or medium level.</p>
+  <div class="skills">
+   <div class="panel">
+    <h3>Core (daily, production work)</h3>
+    <ul class="chips">
+     <li class="chip core">SQL</li><li class="chip core">Power BI · DAX · Power Query · RLS</li><li class="chip core">Tableau Desktop, Server &amp; Cloud</li>
+     <li class="chip core">Amazon Redshift</li><li class="chip core">PostgreSQL</li><li class="chip core">Oracle</li>
+     <li class="chip core">Data modelling · star schema</li><li class="chip core">SQL stored procedures · ETL</li><li class="chip core">Pentaho Report Designer</li><li class="chip core">SAS</li>
+     <li class="chip core">Excel</li><li class="chip core">Cohort, churn, MRR/ARR analysis</li><li class="chip core">KPI &amp; financial reporting</li>
+    </ul>
+    <h3 style="margin-top:20px">Also strong</h3>
+    <ul class="chips">
+     <li class="chip">Python <small>pandas, NumPy, matplotlib</small></li><li class="chip">Git</li><li class="chip">REST APIs <small>medium</small></li>
+     <li class="chip">Statistics &amp; regression <small>medium</small></li><li class="chip">AWS S3</li><li class="chip">Google Sheets <small>medium</small></li>
+    </ul>
+   </div>
+   <div class="panel">
+    <h3>Working knowledge</h3>
+    <ul class="chips">
+     <li class="chip">dbt <small>basic-medium</small></li><li class="chip">Matillion <small>basic</small></li><li class="chip">Snowflake <small>basic</small></li><li class="chip">BigQuery <small>basic</small></li>
+     <li class="chip">Microsoft Fabric <small>basic</small></li><li class="chip">Power BI advanced <small>DAX Studio, incremental refresh</small></li>
+     <li class="chip">Power Automate <small>basic</small></li><li class="chip">Looker Studio <small>basic</small></li><li class="chip">Airflow <small>basic</small></li>
+     <li class="chip">Informatica · Fivetran <small>basic</small></li><li class="chip">R <small>basic</small></li><li class="chip">A/B testing <small>basic</small></li>
+     <li class="chip">Apps Script <small>basic</small></li>
+    </ul>
+    <p class="legend"><b>Basic</b> = understand it and can do simple tasks. <b>Medium</b> = have done real tasks with it or a close equivalent.</p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="experience">
+ <div class="wrap">
+  <h2>Experience</h2>
+  <p class="sub">Banking, SaaS and microfinance, in Dubai, Lahore and remote for New York.</p>
+  <ol class="timeline">
+   <li>
+    <h3>Reporting Analyst (rehired) · <span class="org">TCP Software (SaaS)</span></h3>
+    <p class="when">Lahore, Pakistan · Jun 2026 – Present</p>
+    <ul><li>Led the in-house BI tool that replaced Tableau, saving about USD 20-25k a year in licences and opening self-serve reporting to the whole company.</li><li>Migrated 70+ reports and built a reusable report-generation framework that at least halves report-building time, with analysts reviewing every output.</li><li>Own MRR/ARR, billing and finance reporting, sales rankings, and revenue and bookings forecasts on Redshift, PostgreSQL, Salesforce, HubSpot and Zuora data.</li></ul>
+   </li>
+   <li>
+    <h3>Senior Analytics Consultant · <span class="org">Dicetek (client: Emirates Islamic Bank)</span></h3>
+    <p class="when">Dubai, UAE · Feb 2024 – May 2026</p>
+    <ul><li>Delivered 50-100 Power BI reports and dashboards for Digital Operations, Digital Transformation and Digital Marketing, presented to executives.</li><li>Administered Power BI Service workspaces, gateways, refresh schedules and row-level security.</li><li>Reported on logins, usage and transactions across app, web, WhatsApp, call centre and branch, tracking the shift from branch to digital channels.</li><li>Built monthly sales commission calculations and weighted scorecards for 500+ sales staff, with incentive dashboards for management.</li></ul>
+   </li>
+   <li>
+    <h3>Reporting Analyst · <span class="org">TCP Software (SaaS)</span></h3>
+    <p class="when">Lahore, Pakistan · Aug 2022 – Jan 2024</p>
+    <ul><li>Built 60+ Tableau and Power BI dashboards for C-level, Sales, Marketing, Billing, Finance, Support, HR and Customer Success.</li><li>Deployed dashboards to Tableau Server and Cloud; managed sites, permissions and refresh schedules.</li><li>Built ETL pipelines (SQL, stored procedures, Matillion, Airflow, AWS) for the warehouse and data marts on Redshift and PostgreSQL.</li><li>Ran cohort, churn, retention and MRR/ARR analysis and found drivers of regional churn.</li></ul>
+   </li>
+   <li>
+    <h3>Data / Report Analyst · <span class="org">Diginc Technologies</span></h3>
+    <p class="when">Remote, Pakistan · Nov 2021 – Jul 2022</p>
+    <ul><li>Built Power BI finance dashboards (P&amp;L, balance sheet, journal entries, active loans and clients, client ledger).</li><li>Developed 50+ financial reports for the Pakistan Microfinance Network in Pentaho with Oracle SQL.</li><li>Built reconciled loan-portfolio and client-ledger models with balance checks before month-end.</li></ul>
+   </li>
+   <li>
+    <h3>Data Analyst · <span class="org">CODE Informatics</span></h3>
+    <p class="when">Islamabad, Pakistan · Nov 2019 – Oct 2021</p>
+    <ul><li>Built 50+ Pentaho financial reports (balance sheet, ledgers, portfolio at risk) for microfinance banks and institutions in Pakistan.</li><li>Wrote advanced Oracle SQL for reports and ad-hoc requests; gathered requirements with clients.</li></ul>
+   </li>
+   <li>
+    <h3>Freelance Data Analyst (part-time) · <span class="org">US real-estate agency</span></h3>
+    <p class="when">San Francisco, USA (remote) · 2026 – Present</p>
+    <ul><li>Build market reports and dashboards, lead research lists, and SEO and website content.</li></ul>
+   </li>
+   <li>
+    <h3>Data Analyst · <span class="org">SleePare</span></h3>
+    <p class="when">New York, USA (remote) · Oct 2018 – Oct 2019</p>
+    <ul><li>Built the data warehouse from CRM, Google Analytics and Tag Manager data.</li><li>Automated email campaigns and built churn, sales and operational reports in SQL, Excel and Google Sheets.</li></ul>
+   </li>
+  </ol>
+ </div>
+</section>
+
+<section class="alt" id="projects">
+ <div class="wrap">
+  <h2>Projects &amp; case studies</h2>
+  <p class="sub">Work projects are described without client data. Public projects link to the real thing.</p>
+  <div class="cards">
+   <article class="card">
+    <p class="tag">Work · SaaS</p>
+    <h3>In-house BI tool that replaced Tableau</h3>
+    <dl>
+     <dt>Problem</dt><dd>Tableau licences were a recurring cost and limited reporting to 60-70 licensed users.</dd>
+     <dt>Approach</dt><dd>Led the build of an internal BI platform on the existing Redshift and PostgreSQL data, migrated 70+ reports and added a reusable report-generation framework.</dd>
+     <dt>Result</dt><dd>Saves about USD 20-25k a year in licences and opens self-serve reporting to the whole company, up from 60-70 licensed users.</dd>
+    </dl>
+    <div class="tools"><span>Redshift</span><span>PostgreSQL</span><span>SQL</span><span>Team lead</span></div>
+   </article>
+   <article class="card">
+    <p class="tag">Work · Banking</p>
+    <h3>Sales commission &amp; scorecards</h3>
+    <dl>
+     <dt>Problem</dt><dd>Monthly commission and performance scoring for a large bank sales force needed one consistent, repeatable model.</dd>
+     <dt>Approach</dt><dd>Built the commission calculations and weighted scorecards in SAS and SQL, with department incentive dashboards in Power BI.</dd>
+     <dt>Result</dt><dd>500+ sales staff scored every month on the same rules.</dd>
+    </dl>
+    <div class="tools"><span>SAS</span><span>SQL</span><span>Power BI</span></div>
+   </article>
+   <article class="card">
+    <p class="tag">Work · SaaS</p>
+    <h3>SaaS revenue &amp; churn reporting</h3>
+    <dl>
+     <dt>Problem</dt><dd>Leadership needed one view of MRR, ARR, churn and cohorts across markets.</dd>
+     <dt>Approach</dt><dd>Built data marts on Redshift and 60+ Tableau and Power BI dashboards, segmented by market size and industry.</dd>
+     <dt>Result</dt><dd>Clear drivers of regional churn and a rep performance model used by sales.</dd>
+    </dl>
+    <div class="tools"><span>Redshift</span><span>Tableau</span><span>Power BI</span><span>ETL</span></div>
+   </article>
+   <article class="card">
+    <p class="tag">Public · GitHub</p>
+    <h3>IT sales analytics with dbt</h3>
+    <dl>
+     <dt>Problem</dt><dd>Show a tested, documented transformation layer for a reseller's sales data (made-up data).</dd>
+     <dt>Approach</dt><dd>Staging, a star schema at order-line grain and two marts, with revenue logic defined once.</dd>
+     <dt>Result</dt><dd>37 automated checks, including a mart-to-fact reconciliation test.</dd>
+    </dl>
+    <div class="tools"><span>dbt</span><span>DuckDB</span><span>SQL</span><span>Git</span></div>
+    <a class="link" href="https://github.com/basitali-data/it-sales-analytics-dbt" target="_blank" rel="noopener">View on GitHub →</a>
+   </article>
+   <article class="card">
+    <p class="tag">Public · Google Sheets</p>
+    <h3>Driver performance scorecard</h3>
+    <dl>
+     <dt>Problem</dt><dd>A moving company needs a simple weekly view of driver performance.</dd>
+     <dt>Approach</dt><dd>Google Sheets scorecard with weighted metrics, automated with Apps Script (sample data).</dd>
+     <dt>Result</dt><dd>A live, shareable scorecard anyone can open.</dd>
+    </dl>
+    <div class="tools"><span>Google Sheets</span><span>Apps Script</span></div>
+    <a class="link" href="https://docs.google.com/spreadsheets/d/1gVOr3x56X-uC8irPI-P17ED8vhTmJ2zahKLI3N7NKFk/edit?usp=sharing" target="_blank" rel="noopener">Open the demo →</a>
+   </article>
+   <article class="card">
+    <p class="tag">Public · Web app</p>
+    <h3>NetPayWise take-home pay calculator</h3>
+    <dl>
+     <dt>Problem</dt><dd>People in the UK, Ireland and Canada want a fast, clear take-home pay estimate.</dd>
+     <dt>Approach</dt><dd>Built and launched a lightweight calculator site with tax rules per country.</dd>
+     <dt>Result</dt><dd>Live public site, built for speed.</dd>
+    </dl>
+    <div class="tools"><span>Web</span><span>Tax rules</span><span>SEO</span></div>
+    <a class="link" href="https://netpaywise.com" target="_blank" rel="noopener">Visit netpaywise.com →</a>
+   </article>
+  </div>
+ </div>
+</section>
+
+<section id="dashboards">
+ <div class="wrap">
+  <h2>Sample dashboards</h2>
+  <p class="sub">Tableau Public dashboards built on sample data. Click any preview to open the interactive version.</p>
+  <div class="gallery" id="gallery"></div>
+  <p class="note">Power BI samples are coming soon. Full profile: <a href="https://public.tableau.com/app/profile/basitalietrat" target="_blank" rel="noopener">public.tableau.com/app/profile/basitalietrat</a></p>
+ </div>
+</section>
+
+<section class="alt" id="education">
+ <div class="wrap">
+  <h2>Education &amp; certification</h2>
+  <div class="edu">
+   <div class="panel"><h3>MS Data Science</h3><p>Bahria University, Pakistan · 2019 – 2021</p></div>
+   <div class="panel"><h3>BS Software Engineering</h3><p>National University of Sciences and Technology (NUST), Islamabad · 2013 – 2017</p></div>
+   <div class="panel"><h3>Tableau Desktop Specialist</h3><p>Tableau · Nov 2023</p><p style="margin-top:8px">Courses: Power BI Essential Training, Tableau 10: Mastering Calculations, Creating Interactive Tableau Dashboards (LinkedIn Learning, 2023); SQL for Joining Data (DataCamp, 2022)</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="looking">
+ <div class="wrap">
+  <h2>What I'm looking for</h2>
+  <div class="targets">
+   <div class="panel">
+    <h3>Roles</h3>
+    <ul>
+     <li>BI Developer / Senior BI Analyst</li>
+     <li>Analytics Engineer</li>
+     <li>Senior Data / Reporting Analyst</li>
+     <li>Power BI or Tableau consultant (contract)</li>
+    </ul>
+   </div>
+   <div class="panel">
+    <h3>Where</h3>
+    <ul>
+     <li>Fully remote, worldwide, with US-hour overlap</li>
+     <li>Visa-sponsored roles in Germany, the Netherlands, Ireland, Singapore, Poland and Malaysia</li>
+     <li>Banking, fintech, SaaS and microfinance teams</li>
+    </ul>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="contact" id="contact">
+ <div class="wrap">
+  <h2>Let's talk</h2>
+  <p class="sub">Hiring for BI or analytics?</p>
+  <div class="btns">
+   <a class="btn primary" href="mailto:mbasitalietrat1@gmail.com">mbasitalietrat1@gmail.com</a>
+   <a class="btn ghost" href="https://www.linkedin.com/in/basitalietrat" target="_blank" rel="noopener">LinkedIn</a>
+   <a class="btn ghost" href="https://github.com/basitali-data" target="_blank" rel="noopener">GitHub</a>
+   <a class="btn ghost" href="cv/Basit-Ali-CV.pdf" download>Download CV</a>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer><div class="wrap">© 2026 Basit Ali · Lahore, Pakistan</div></footer>
+
+<script>
+const V=[
+["CallCenterAnalytics_17046670463480","Overview","Call Center Analytics"],
+["CallCenterOverview_17046659510200","ExecutiveSummary","Call Center Overview"],
+["BankingLoansSummary","ExecutiveSummary","Banking Loans Summary"],
+["CustomerAnalysis_17046378019880","Customers","Customer Analysis"],
+["SalesOverviewDashboard_17046365424620","Overview","Sales Overview"],
+["StoreSales_17045786022310","SalesSummary","Store Sales"],
+["SalesSummary_17045758069580","SalesSummary","Sales Summary"],
+["CustomersChurn_17044970835710","CustomerChurn","Customer Churn"],
+["SchoolActivityDashboard","TeachersActivity","School Activity"],
+["MarketingLeadsDashboard_17044642625270","Summary","Marketing Leads"]];
+const g=document.getElementById('gallery');
+g.innerHTML=V.map(([w,s,t])=>`<a class="viz" href="https://public.tableau.com/app/profile/basitalietrat/viz/${w}/${s}" target="_blank" rel="noopener"><img loading="lazy" width="400" height="300" alt="Preview of the ${t} dashboard" src="https://public.tableau.com/static/images/${w.slice(0,2)}/${w}/${s}/4_3.png"><span>${t}</span></a>`).join('');
+const b=document.querySelector('.menu-btn'),m=document.getElementById('menu');
+b.addEventListener('click',()=>{const o=m.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+m.addEventListener('click',e=>{if(e.target.tagName==='A'){m.classList.remove('open');b.setAttribute('aria-expanded','false')}});
+</script>
+</body>
+</html>
